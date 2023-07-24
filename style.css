@@ -1,0 +1,323 @@
+* {
+ box-sizing: border-box;
+ margin: 0%;
+ padding: 0%;
+}
+
+@font-face {
+    font-family: 'Mokoto';
+    src: url('Mokoto-Regular.woff2') format('woff2'),
+        url('Mokoto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    background-color: rgb(39, 35, 35);
+    color:  hsl(10, 20%, 94%);
+    text-shadow: 12px;
+    font-family: 'Mokoto';
+    font-size: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-left:auto ;
+    margin-right: auto;
+    max-width: 2560px;
+  
+}
+
+.header-container {
+    display: inline-flex;
+    justify-content:flex-end;
+    justify-content: space-between;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 138px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 83%, rgba(226,231,232,0) 100%);
+}
+.menu ul  {
+    list-style-type: none;
+    display: flex;
+    
+   
+}
+
+#accedi {
+display: flex;
+flex-direction: row-reverse;
+justify-self:flex-start;
+line-height: 54px;
+}
+
+
+.link {
+    color: rgb(232, 87, 38);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(128, 20, 139);
+    transition: 0.9s ease;
+    transform: scale(1.5); 
+}
+
+.menu ul li { 
+     margin-left: 30px;
+     margin-top:30px ;
+     font-size: 26px;
+     font-weight: 600;
+     line-height: 86px;
+     text-transform: uppercase;
+     
+
+}
+
+
+
+
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 86px;
+    color: #faf8f8;
+    text-shadow: -1px 0 #3a0cf4, 0 1px #3a0cf4, 1px 0 #3a0cf4, 0 -1px #3a0cf4;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 86px;
+    text-transform: uppercase;
+    width: 300px;
+    margin-top: 10px;
+    position: absolute;
+    left: 30px;
+
+}
+
+
+#titolo2 {
+    font-size: 38px;
+     font-weight: 600;
+    line-height: normal;
+    color: #faf8f8;
+    text-shadow: -1px 0 #3a0cf4, 0 1px #3a0cf4, 1px 0 #3a0cf4, 0 -1px #3a0cf4;
+}
+
+
+.cta {
+     background-color:  rgb(109, 15, 241);
+     color: black;
+     font-weight: 600;
+     font-size: 18px;
+}
+
+.cta:hover {
+     background-color: orange;
+     transition: 0.5s ease;
+     transform: scale(1.5); 
+}
+
+.container {
+       width: 100%;
+       margin-right: auto;
+       margin-left: auto;
+       display: flex;
+       justify-content: center;
+
+}
+
+section {
+    height: 100vh;
+
+}
+
+.slogan {
+    margin-inline-start: 160px;
+    
+}
+
+.hero-container {
+     display: flex;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     background-image: url(images/portale.jpg);
+     background-size: cover;
+     
+     
+}
+
+button {
+    background-color: rgb(109, 15, 241);
+    color: black;
+    border-radius: 36px;
+    border: none;
+    padding: 12px 24px; 
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+#accedi-btn {
+    background-color:  rgb(109, 15, 241);
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 36px;
+    border: none;
+    padding: 12px 24px; 
+
+}
+
+span {
+    display: flex;
+  
+}
+
+.main {
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 35%, rgba(100,9,103,0.7329525560224089) 100%);
+   
+}
+
+.presentazione {
+    padding: 30px;
+    height: fit-content;
+    border-radius: 36px;
+    background-color: #373738;
+    border: solid rgb(250, 245, 245);
+    margin: 30px;
+    
+}
+
+
+.lavagna {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: min-content;
+}
+
+.feedback {
+    width: 100%;
+    height: min-content;
+    padding: 60px, 30px, 60px, 30px;
+    background-color: #373738;
+
+
+}
+
+.cards {
+    margin: -15px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    row-gap: 30px;
+    flex-wrap:none;
+    gap: 10px;
+  
+}
+
+.card-container {
+    background-color: rgb(11, 9, 9);
+    color: rgba(84, 180, 175, 0.676);
+    padding: 16px 16px;
+    border-radius: 0px 0px 12px 12px;
+   
+}
+
+.cartucc{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 12px 12px 0px 0px;
+
+    
+}
+.card {
+    background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 0px 0px 12px 12px;
+ 
+}
+
+
+
+
+p {
+    line-height: normal;
+}
+
+h2, h3 {
+    line-height: normal;
+    text-transform: uppercase;
+    color: rgba(0, 0, 255, 0.643);
+}
+
+
+/*FORM*/
+
+section.form {
+
+   display: inline-flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   
+   align-self:center;
+
+
+
+
+}
+
+.invite {
+   
+
+}
+
+.form-content {
+  
+}
+
+form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 12px;
+    border: solid whitesmoke;
+   
+}
+
+label {
+    text-decoration-style: double;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+input {
+    background-color: aqua;
+    border-radius: 36px;
+    padding: 10px;
+}
